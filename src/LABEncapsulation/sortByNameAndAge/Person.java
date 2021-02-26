@@ -29,13 +29,37 @@ public class Person {
         return salary;
     }
 
+    public void setFirstName(String firstName) {
+        if(firstName == null || firstName.length() < 3){
+            throw new IllegalStateException("First name cannot be less than 3 symbols");
+        }
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        if(lastName == null || lastName.length() < 3){
+            throw new IllegalStateException("First name cannot be less than 3 symbols");
+        }
+        this.lastName = lastName;
+    }
+
+    public void setAge(int age) {
+        if(age <= 0){
+            throw  new IllegalStateException("Age cannot be zero or negative integer");
+        }
+        this.age = age;
+    }
+
     public void setSalary(double salary) {
-        this.salary = salary;
+        if(salary < 460){
+            throw new IllegalStateException("Salary cannot be less than 460 leva.");
+
+        }
     }
 
     public void increaseSalary(double bonus) {
         if(getAge() < 30){
-            this.salary = (this.salary *(1.00 + bonus / 200));
+            this.salary = this.salary *(1.00 + bonus / 200);
         }else {
             this.salary = this.salary * (1.00 + bonus / 100);
         }
