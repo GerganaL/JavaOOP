@@ -76,7 +76,7 @@ public class Bag {
             if (!typeOfTreasure.getValue ().isEmpty ()) {
                 Long sumValues = typeOfTreasure.getValue ().values ().stream ().mapToLong (l -> l).sum ();
                 System.out.printf ("<%s> $%s%n", typeOfTreasure.getKey (), sumValues);
-                typeOfTreasure.getValue ().entrySet ().stream ().sorted ((e1, e2) -> e2.getKey ().compareTo (e1.getKey ())).forEach (subType -> System.out.printf ("##%s - %d%n", subType.getKey (), subType.getValue ()));
+                typeOfTreasure.getValue ().entrySet ().stream ().sorted ((e1, e2) -> e2.getKey ().compareTo(e1.getKey ())).forEach (subType -> System.out.printf ("##%s - %d%n", subType.getKey (), subType.getValue ()));
 
             }
 
