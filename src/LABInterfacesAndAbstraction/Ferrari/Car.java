@@ -1,4 +1,4 @@
-package Ferrari;
+package LABInterfacesAndAbstraction.Ferrari;
 
 public
 interface Car {

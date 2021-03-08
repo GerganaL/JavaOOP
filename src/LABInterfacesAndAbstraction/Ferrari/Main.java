@@ -1,4 +1,4 @@
-package Ferrari;
+package LABInterfacesAndAbstraction.Ferrari;
 
 import java.util.Scanner;
 
