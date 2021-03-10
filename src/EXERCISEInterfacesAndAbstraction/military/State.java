@@ -1,7 +1,7 @@
 package EXERCISEInterfacesAndAbstraction.military;
 
 public enum State {
-    INPROGRESS("inProgress"), FINISHED("finished");
+    INPROGRESS("inProgress"), FINISHED("Finished");
     private String state;
 
     State(String state) {

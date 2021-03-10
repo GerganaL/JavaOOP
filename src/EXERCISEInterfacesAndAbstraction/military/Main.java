@@ -66,11 +66,10 @@ public class Main {
                         if (tokens.length > 6) {
                             for (int i = 6; i < tokens.length; i += 2) {
                                 String state = tokens[i + 1];
-                                if (state.equals("inProgress")) {
+                                if (state.equals("inProgress") || state.equals("Finished")) {
                                     Mission mission = new Mission(tokens[i], State.valueOf(tokens[i + 1].toUpperCase()));
                                     commando.addMission(mission);
                                 }
-
                             }
                         }
                         soldiers.add(commando);
