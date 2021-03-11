@@ -1,6 +1,6 @@
 package LABSOLID.p05_DependencyInversion.p03_Database;
 
-public class Data {
+public class Data implements Database {
     public Iterable<Integer> courseIds()
     {
         // return course ids
