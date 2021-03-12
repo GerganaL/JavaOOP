@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public class CommandImpl implements CommandInterface {
-    static String cutPart;
+    //static String cutPart;
     private Map<String, TextTransform> commandTransforms;
     private StringBuilder text;
 
@@ -24,7 +24,7 @@ public class CommandImpl implements CommandInterface {
         }
     }
 
-    class CutTransform implements TextTransform {
+    /*class CutTransform implements TextTransform {
 
         @Override
         public void invokeOn(StringBuilder text, int startIndex, int endIndex) {
@@ -39,7 +39,7 @@ public class CommandImpl implements CommandInterface {
         public void invokeOn(StringBuilder text, int startIndex, int endIndex) {
             text.replace(startIndex, endIndex, cutPart);
         }
-    }
+    }*/
 
 
     @Override
@@ -57,16 +57,16 @@ public class CommandImpl implements CommandInterface {
         String commandName = tokens[0];
         int startInd = Integer.parseInt(tokens[1]);
         int endInd = Integer.parseInt(tokens[2]);
-        List<Command> commands = initCommands();
-        init();
+
         this.commandTransforms.get(commandName).invokeOn(this.text, startInd, endInd);
     }
 
     protected List<Command> initCommands() {
         List<Command> commands = new ArrayList<>();
+        CutTransform cutTransform = new CutTransform();
         commands.add(new Command("uppercase", new ToUpperTransform()));
-        commands.add(new Command("cut", new CutTransform()));
-        commands.add(new Command("paste", new PasteTransform()));
+        commands.add(new Command("cut",cutTransform));
+        commands.add(new Command("paste", new PasteTransform(cutTransform)));
 
         return commands;
     }
