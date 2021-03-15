@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class cores {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[] listFiles = Arrays.stream(scanner.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
         int numCores = Integer.parseInt(scanner.nextLine());
@@ -32,5 +32,5 @@ public class cores {
         minTime += noParallel.stream().mapToInt(Integer::intValue).sum();
         System.out.println(minTime);
 
-    }
+    }*/
 }

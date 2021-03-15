@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 public class test {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int queries = in.nextInt();
@@ -19,5 +19,5 @@ public class test {
         System.out.print(LongStream.of(output).map(sum::addAndGet)
                 .max().getAsLong());
         in.close();
-    }
+    }*/
 }
