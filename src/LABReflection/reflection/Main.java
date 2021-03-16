@@ -32,7 +32,7 @@ public class Main {
         setters
                 .stream()
                 .sorted(Comparator.comparing(Method::getName))
-                .forEach(s -> System.out.printf("%s and will set field of class %s%n",s.getName(), Arrays.toString(s.getParameterTypes())));
+                .forEach(s -> System.out.printf("%s and will set field of class %s%n",s.getName(),s.getParameterTypes()[0].getName()));
 
        /* setters.stream().sorted(Comparator.comparing(Method::getName)).forEach(s -> {
             if(Arrays.toString(s.getParameterTypes()).contains("class")){
