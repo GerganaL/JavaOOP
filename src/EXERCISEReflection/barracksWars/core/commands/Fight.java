@@ -1,6 +1,6 @@
-package barracksWars.core.commands;
+package EXERCISEReflection.barracksWars.core.commands;
 
-import barracksWars.interfaces.Executable;
+import EXERCISEReflection.barracksWars.interfaces.Executable;
 import jdk.jshell.spi.ExecutionControl;
 
 public class Fight implements Executable {

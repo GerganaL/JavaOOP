@@ -1,10 +1,9 @@
-package barracksWars.core.factories;
+package EXERCISEReflection.barracksWars.core.factories;
 
-import barracksWars.interfaces.CommandInterpreter;
-import barracksWars.interfaces.Executable;
-import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.UnitFactory;
-
+import EXERCISEReflection.barracksWars.interfaces.CommandInterpreter;
+import EXERCISEReflection.barracksWars.interfaces.Executable;
+import EXERCISEReflection.barracksWars.interfaces.Repository;
+import EXERCISEReflection.barracksWars.interfaces.UnitFactory;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

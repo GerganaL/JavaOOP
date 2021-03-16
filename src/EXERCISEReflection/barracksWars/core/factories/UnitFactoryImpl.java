@@ -1,7 +1,7 @@
-package barracksWars.core.factories;
+package EXERCISEReflection.barracksWars.core.factories;
 
-import barracksWars.interfaces.Unit;
-import barracksWars.interfaces.UnitFactory;
+import EXERCISEReflection.barracksWars.interfaces.Unit;
+import EXERCISEReflection.barracksWars.interfaces.UnitFactory;
 
 import java.lang.reflect.InvocationTargetException;
 

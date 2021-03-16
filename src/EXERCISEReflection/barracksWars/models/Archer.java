@@ -1,4 +1,4 @@
-package barracksWars.models;
+package EXERCISEReflection.barracksWars.models;
 
 public class Archer extends AbstractUnit {
     private static final int ARCHER_HEALTH = 25;

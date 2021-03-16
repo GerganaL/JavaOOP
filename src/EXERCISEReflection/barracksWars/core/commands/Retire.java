@@ -1,7 +1,7 @@
-package barracksWars.core.commands;
+package EXERCISEReflection.barracksWars.core.commands;
 
-import barracksWars.interfaces.Executable;
-import barracksWars.interfaces.Repository;
+import EXERCISEReflection.barracksWars.interfaces.Executable;
+import EXERCISEReflection.barracksWars.interfaces.Repository;
 
 public class Retire implements Executable {
     private String[] data;

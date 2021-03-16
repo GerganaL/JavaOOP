@@ -1,6 +1,6 @@
-package barracksWars.models;
+package EXERCISEReflection.barracksWars.models;
 
-public class Gunner extends AbstractUnit{
+public class Gunner extends AbstractUnit {
     private static final int GUNNER_HEALTH = 20;
     private static final int GUNNER_DAMAGE = 20;
     public Gunner() {

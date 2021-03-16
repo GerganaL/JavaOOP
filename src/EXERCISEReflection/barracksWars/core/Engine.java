@@ -1,9 +1,8 @@
-package barracksWars.core;
+package EXERCISEReflection.barracksWars.core;
 
-import barracksWars.interfaces.*;
-import barracksWars.interfaces.Runnable;
+import EXERCISEReflection.barracksWars.interfaces.CommandInterpreter;
+import EXERCISEReflection.barracksWars.interfaces.Runnable;
 import jdk.jshell.spi.ExecutionControl;
-
 
 import java.io.BufferedReader;
 import java.io.IOException;

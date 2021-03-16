@@ -1,9 +1,9 @@
-package barracksWars.core.commands;
+package EXERCISEReflection.barracksWars.core.commands;
 
-import barracksWars.interfaces.Executable;
-import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.Unit;
-import barracksWars.interfaces.UnitFactory;
+import EXERCISEReflection.barracksWars.interfaces.Executable;
+import EXERCISEReflection.barracksWars.interfaces.Repository;
+import EXERCISEReflection.barracksWars.interfaces.Unit;
+import EXERCISEReflection.barracksWars.interfaces.UnitFactory;
 import jdk.jshell.spi.ExecutionControl;
 
 
