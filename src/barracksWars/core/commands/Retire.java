@@ -1,18 +1,26 @@
 package barracksWars.core.commands;
 
+import barracksWars.interfaces.Executable;
 import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.UnitFactory;
-import jdk.jshell.spi.ExecutionControl;
 
-public class Retire extends Command {
-    public Retire(String[] data, Repository repository, UnitFactory unitFactory) {
-        super(data, repository, unitFactory);
+public class Retire implements Executable {
+    private String[] data;
+    private Repository repository;
+
+
+    public Retire(){
+
+    }
+
+    public Retire(String[] data, Repository repository) {
+        this.data = data;
+        this.repository = repository;
     }
 
     @Override
-    public String execute() throws ExecutionControl.NotImplementedException {
-        String unitType = this.getData()[1];
-        this.getRepository().removeUnit(unitType);
+    public String execute() {
+        String unitType = this.data[1];
+        this.repository.removeUnit(unitType);
         return unitType + " retired!";
     }
 }
